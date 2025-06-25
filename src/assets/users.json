@@ -11,8 +11,9 @@
       "especialidad": "Perdida de peso",
       "universidad": "Shahrood University of Technology",
       "experiencia": 7,
-      "costo": 19.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"19.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Irure non velit excepteur et dolor. Labore nostrud dolor dolore elit culpa magna enim enim proident qui laboris. Aute officia proident adipisicing sint ex duis laboris. Laborum minim voluptate incididunt adipisicing sit id labore eiusmod cillum occaecat labore ullamco deserunt. Anim aliqua veniam ullamco veniam excepteur cillum excepteur. Deserunt laboris consectetur proident eu irure. Anim irure minim voluptate veniam duis dolore qui. Ex est fugiat in reprehenderit. Commodo ad magna cillum commodo ex quis ullamco dolore sint commodo proident velit."
     },
     {
       "id": 2,
@@ -25,8 +26,9 @@
       "especialidad": "Principiantes",
       "universidad": "St. Pauls University",
       "experiencia": 6,
-      "costo": 18.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"18.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Aliquip minim pariatur ea culpa ea officia. Adipisicing eu cillum eu in est et labore Lorem ipsum tempor in Lorem. Id magna mollit cillum veniam adipisicing ipsum. Minim id quis laboris cillum sit eu. Magna id aliqua duis pariatur pariatur. Eiusmod irure ipsum duis exercitation eu sit sunt velit qui nisi culpa culpa id. Eiusmod aute et amet aliquip eu elit fugiat. Excepteur sunt excepteur reprehenderit aliquip eiusmod anim aliquip veniam aliquip ut voluptate labore. Duis ullamco nisi aliqua aliqua ad voluptate mollit qui. Ad tempor in pariatur do ullamco veniam consectetur exercitation. Ad ea proident proident sint proident sit esse. Eiusmod culpa quis nisi anim Lorem officia in. Duis laborum ea occaecat dolor eu laboris."
     },
     {
       "id": 3,
@@ -39,8 +41,9 @@
       "especialidad": "Principiantes",
       "universidad": "Technological University (Mawlamyaing)",
       "experiencia": 7,
-      "costo": 15.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"15.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Nisi aute commodo et nulla velit veniam consequat occaecat culpa minim amet exercitation velit occaecat. Et dolore dolor nulla nulla. Minim amet sunt tempor esse aliqua cillum. Consequat enim nisi ad tempor in. Non adipisicing pariatur enim esse adipisicing. Id dolore ea Lorem eu consectetur culpa. Veniam veniam do mollit irure. Aliquip dolore nisi pariatur ut et cupidatat in ex anim tempor veniam. Amet aute officia qui nulla proident ipsum esse minim quis eu id. In mollit deserunt exercitation nostrud anim Lorem pariatur Lorem sunt eiusmod nostrud Lorem sit veniam. Cillum dolor deserunt dolore culpa culpa amet adipisicing ex occaecat. Excepteur aliquip non exercitation tempor deserunt cupidatat pariatur est."
     },
     {
       "id": 4,
@@ -53,8 +56,9 @@
       "especialidad": "Movilidad reducida",
       "universidad": "Josai International University",
       "experiencia": 2,
-      "costo": 5.49, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"5.49"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Nisi eiusmod magna consequat irure velit laboris enim reprehenderit deserunt nostrud occaecat deserunt ipsum adipisicing. Duis sint Lorem ullamco duis. Duis sint mollit elit proident consequat consectetur. Consequat est pariatur ea ad minim amet quis qui cillum laborum. Ad quis eiusmod laboris incididunt. Enim est aliqua culpa pariatur eiusmod labore anim veniam pariatur mollit anim magna fugiat adipisicing. Et culpa cillum mollit mollit consectetur est. Laboris proident ea voluptate aliquip ut sit ea qui anim. Sit proident quis sit labore nulla do veniam tempor amet mollit exercitation do sit ipsum."
     },
     {
       "id": 5,
@@ -67,8 +71,9 @@
       "especialidad": "Principiantes",
       "universidad": "University of South Australia",
       "experiencia": 5,
-      "costo": 39.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"39.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Adipisicing incididunt exercitation ullamco aliquip minim dolor qui culpa. Eu exercitation labore excepteur labore elit qui est aute eiusmod excepteur ullamco in quis. Velit voluptate dolor velit magna laboris consectetur incididunt ullamco elit. Veniam ea do qui ad non nulla adipisicing duis excepteur excepteur eu duis. Pariatur tempor incididunt excepteur elit laborum cupidatat magna occaecat esse culpa esse cupidatat. Eu velit non cillum sint adipisicing voluptate Lorem aliquip ipsum irure deserunt in officia. Est consectetur magna labore dolore irure sunt do. Ex reprehenderit occaecat fugiat do aliqua sunt quis consectetur quis labore aliqua. Qui adipisicing reprehenderit cupidatat labore ea ipsum anim reprehenderit ut veniam eiusmod est."
     },
     {
       "id": 6,
@@ -81,8 +86,9 @@
       "especialidad": "Fitness motivacional",
       "universidad": "National-Louis University",
       "experiencia": 4,
-      "costo": 24.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"24.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Consectetur excepteur nisi dolore ullamco excepteur nisi et dolore laborum in velit. Nulla non nulla reprehenderit dolore Lorem ullamco et ad aliquip aliqua ipsum qui enim aliquip. Magna ipsum culpa Lorem elit enim et quis excepteur officia sunt sunt. In cupidatat magna sunt ut mollit do esse sit qui voluptate ullamco. Ipsum nisi magna officia amet aliqua ea mollit officia velit ea nisi qui eu. Irure veniam in cillum mollit. Sint elit aliqua magna occaecat cupidatat. Tempor et cillum ex officia cupidatat minim quis excepteur aliqua eu ut."
     },
     {
       "id": 7,
@@ -95,8 +101,9 @@
       "especialidad": "Principiantes",
       "universidad": "Hajvery University Lahore for Women",
       "experiencia": 6,
-      "costo": 59.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"59.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Consequat ea veniam Lorem ipsum dolor incididunt ipsum minim. Labore nulla excepteur incididunt consequat aliquip laborum incididunt sit sint fugiat ex esse eu. Consequat ad mollit exercitation sunt tempor eu magna sunt aliquip. Amet quis enim excepteur cillum. Dolor ea aute quis sit tempor nulla dolor adipisicing enim minim Lorem anim. Sit est occaecat in incididunt ex elit esse commodo enim nisi. Mollit ex reprehenderit labore ullamco commodo. Do non commodo ad irure."
     },
     {
       "id": 8,
@@ -109,8 +116,9 @@
       "especialidad": "Movilidad reducida",
       "universidad": "Nalanda Open University",
       "experiencia": 4,
-      "costo": 5.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"5.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Occaecat excepteur dolor et et et non elit. Ea ullamco enim voluptate laboris aliqua qui cupidatat minim deserunt velit. Irure elit reprehenderit eu aliqua commodo consectetur officia sit cillum aute commodo reprehenderit. Aliqua occaecat aliquip ipsum aliqua sit sunt do. Cillum occaecat laborum irure tempor esse nisi non sunt do aliquip ullamco nulla cupidatat. Incididunt pariatur minim dolore eu ex. Aliquip Lorem mollit veniam ex dolor adipisicing ad aliquip magna. Sit nostrud et reprehenderit consectetur minim excepteur tempor proident esse. Consectetur mollit fugiat sit proident cupidatat qui fugiat. Deserunt pariatur aliquip velit veniam qui nostrud eiusmod dolor non. Culpa culpa aliqua commodo tempor occaecat ipsum minim dolor cillum est ad dolor fugiat."
     },
     {
       "id": 9,
@@ -123,8 +131,9 @@
       "especialidad": "Principiantes",
       "universidad": "University of St. Thomas, Houston",
       "experiencia": 8,
-      "costo": 8.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"8.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Laboris do commodo pariatur dolore. Minim irure do incididunt veniam veniam dolor do mollit. Eu velit culpa sint qui tempor consequat veniam laborum anim consequat. Sunt aliquip pariatur cupidatat velit elit consequat culpa. Et pariatur in dolor reprehenderit cillum culpa minim irure labore. Nulla pariatur ut ex ex anim. Ea velit Lorem fugiat cupidatat esse. Aliqua do sit sint cillum do ex amet elit voluptate velit sunt deserunt excepteur sit."
     },
     {
       "id": 10,
@@ -137,8 +146,9 @@
       "especialidad": "Principiantes",
       "universidad": "Fatih University",
       "experiencia": 7,
-      "costo": 3.49, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"3.49"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Pariatur ea consequat ea exercitation est ipsum deserunt ipsum dolore ipsum. Veniam enim consectetur do do Lorem in et esse. Sit officia ea irure eiusmod. Consequat incididunt velit id nulla laborum mollit proident culpa aliqua sunt incididunt ea eiusmod. Occaecat amet exercitation exercitation quis commodo enim aute amet velit ipsum nostrud. Ea sit ut consectetur tempor Lorem exercitation cupidatat. Ipsum excepteur deserunt ad quis sint. Cillum reprehenderit nostrud eu nostrud do id eiusmod cupidatat cupidatat sit excepteur minim. Ex proident elit nulla elit tempor magna et do. Consequat adipisicing mollit ea incididunt aliquip aute cillum pariatur. Fugiat ea labore est qui cupidatat nostrud cupidatat excepteur eu minim eu. Consectetur enim adipisicing elit deserunt anim ipsum officia eiusmod proident voluptate laboris dolor mollit."
     },
     {
       "id": 11,
@@ -151,8 +161,9 @@
       "especialidad": "Principiantes",
       "universidad": "East-Siberian State Institute of Culture",
       "experiencia": 9,
-      "costo": 2.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"2.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Nostrud nostrud aliquip qui aute voluptate eiusmod. Adipisicing et enim anim exercitation ut aute aliqua Lorem dolore esse nulla dolor. Ullamco ut id ex labore amet duis. Commodo fugiat ullamco aliquip quis fugiat nostrud. Minim irure reprehenderit non irure incididunt commodo dolor ea eiusmod. Consectetur laboris proident fugiat enim. Et eiusmod sint nisi incididunt. Ea aliqua sit fugiat veniam do duis ullamco culpa cupidatat minim tempor aute sit Lorem. Officia irure nulla excepteur est minim adipisicing labore ipsum. Veniam cillum mollit incididunt officia aliquip ullamco exercitation duis et exercitation. Occaecat consectetur adipisicing aute ullamco laboris dolore veniam. Sunt dolore exercitation do minim minim sit."
     },
     {
       "id": 12,
@@ -165,8 +176,9 @@
       "especialidad": "Fitness motivacional",
       "universidad": "Elon College",
       "experiencia": 9,
-      "costo": 5.49, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"5.49"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Excepteur adipisicing duis quis non tempor proident aute ipsum irure consequat elit. Sunt magna quis in labore ut ad veniam. Exercitation sunt ipsum veniam veniam est veniam officia ipsum magna. Velit quis labore Lorem excepteur consectetur Lorem commodo id cillum in aute ea quis magna. Aliquip dolore irure aliqua in ullamco incididunt fugiat cupidatat culpa nulla velit irure. Sit exercitation sunt qui dolor sint in. Et nulla ut officia esse. Ut ea sunt aliqua commodo et ut. Et id et sint dolor nostrud officia quis. Occaecat dolor veniam sit ullamco duis sunt veniam mollit. Consequat sunt ex dolor deserunt magna anim sint ipsum quis velit amet. Veniam nulla reprehenderit commodo non excepteur nisi eiusmod exercitation est dolor officia esse reprehenderit fugiat. Non nisi eu dolor adipisicing ea aute culpa fugiat cillum mollit ipsum nostrud."
     },
     {
       "id": 13,
@@ -179,8 +191,9 @@
       "especialidad": "Perdida de peso",
       "universidad": "universidad Privada de Santa Cruz de la Sierra",
       "experiencia": 4,
-      "costo": 4.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"4.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Exercitation velit exercitation id nostrud ex id laboris proident excepteur cillum exercitation eiusmod eiusmod ut. Incididunt et aliquip magna consectetur nulla ea. Qui ea cupidatat ut veniam proident. Fugiat aliqua consequat do labore ex Lorem enim ea anim nisi est proident ipsum. Tempor culpa commodo deserunt aliqua ea officia voluptate in tempor magna mollit. Enim pariatur incididunt labore labore labore fugiat veniam esse ut proident velit elit culpa reprehenderit. Non laborum commodo et id ut id magna Lorem sunt. Adipisicing mollit culpa reprehenderit esse officia ea irure ipsum occaecat anim aute pariatur pariatur eiusmod. Voluptate nostrud aliquip veniam consectetur proident ut cillum. Cillum minim laboris officia duis esse deserunt occaecat dolor tempor sit consectetur. Ut cupidatat id in nisi."
     },
     {
       "id": 14,
@@ -193,8 +206,9 @@
       "especialidad": "Movilidad reducida",
       "universidad": "Universität Rostock",
       "experiencia": 3,
-      "costo": 22.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"22.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Qui tempor commodo eiusmod irure ipsum consectetur est id officia veniam do nisi. Pariatur culpa incididunt nisi do adipisicing deserunt dolore irure velit Lorem cillum. Labore exercitation laborum officia nostrud nulla. Commodo qui ipsum dolor qui. Esse nulla laborum consectetur culpa eiusmod sit esse in. Nostrud ullamco adipisicing et irure in exercitation. Duis aliqua officia laborum consequat cupidatat adipisicing esse qui. Laboris et officia consectetur sunt et amet. Amet nisi aute non nulla velit magna aute quis cillum cupidatat. Magna ex occaecat dolor est ipsum laboris nisi nisi consectetur incididunt duis laborum dolor. Pariatur Lorem velit ea incididunt excepteur nostrud amet qui proident nulla in. Anim esse aliqua occaecat ea sunt sint eiusmod laborum do amet pariatur occaecat nisi. Adipisicing dolor irure excepteur minim aute."
     },
     {
       "id": 15,
@@ -207,8 +221,9 @@
       "especialidad": "Fitness motivacional",
       "universidad": "Ivanovo State University of Chemistry and Technology",
       "experiencia": 1,
-      "costo": 3.79, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"3.79"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Et sunt proident do occaecat nisi ut dolor sit ipsum. Culpa ex anim id quis occaecat ut reprehenderit. Occaecat elit qui veniam reprehenderit sunt sunt velit officia laboris. Ex adipisicing enim sint irure anim sint qui magna minim elit irure aliqua magna. Sunt commodo eiusmod exercitation ea pariatur. Voluptate veniam do incididunt ipsum cillum adipisicing laborum velit Lorem quis. Ex aute consequat minim exercitation aute tempor. Aute sint qui velit proident pariatur occaecat officia aute. Esse esse tempor labore do anim occaecat culpa aliquip id excepteur exercitation. Nostrud pariatur excepteur sunt duis sint laboris commodo sit consequat sit qui aute. In qui eu eiusmod voluptate officia elit consequat sunt. Sit excepteur velit dolore enim enim. Deserunt proident magna magna cupidatat sint velit duis sunt ea id."
     },
     {
       "id": 16,
@@ -221,8 +236,9 @@
       "especialidad": "Perdida de peso",
       "universidad": "Shirayuri Women's College",
       "experiencia": 7,
-      "costo": 2.29, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"2.29"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Labore dolore occaecat dolore veniam et veniam ipsum. Fugiat quis excepteur cupidatat ipsum. Et magna ad nostrud proident sunt qui ex tempor laboris cillum non nisi eu sint. Esse nisi culpa ad deserunt. Aliquip nulla quis incididunt id. Aliquip reprehenderit irure Lorem labore. Quis consectetur qui enim eu culpa ut aliqua. Nulla enim aliquip proident cupidatat aute. Veniam minim amet et enim ullamco. Nostrud magna culpa commodo irure eu. Qui reprehenderit magna non in labore sint non officia labore minim minim minim aliqua. Aliqua cupidatat esse pariatur anim nulla duis aliqua Lorem sunt sunt sit labore."
     },
     {
       "id": 17,
@@ -235,8 +251,9 @@
       "especialidad": "Perdida de peso",
       "universidad": "Kobe International University",
       "experiencia": 9,
-      "costo": 3.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"3.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Officia ut occaecat labore ea et. Anim occaecat laborum ullamco quis laboris quis aliquip mollit voluptate dolore reprehenderit fugiat laborum dolore. Non commodo veniam aliqua eu elit magna velit esse Lorem nisi culpa. Dolore mollit aliqua veniam eiusmod ipsum minim consectetur aliqua consequat amet. Aliqua in labore est cillum deserunt esse voluptate cillum duis ut aute Lorem mollit. Anim cupidatat excepteur nisi est sit nulla dolore sit. Excepteur sunt in do do consequat pariatur ipsum occaecat ad commodo elit. Occaecat elit dolore ipsum amet quis exercitation ea cillum occaecat cillum laboris labore laborum. Incididunt eu dolore ad pariatur duis enim cupidatat nulla minim eu consequat. Velit labore mollit est velit sit nostrud eu. Mollit amet laborum cupidatat dolore occaecat magna. Incididunt fugiat sunt voluptate minim. Nostrud laboris eiusmod nisi est ea."
     },
     {
       "id": 18,
@@ -249,8 +266,9 @@
       "especialidad": "Movilidad reducida",
       "universidad": "Private Fachhochschule Göttingen",
       "experiencia": 6,
-      "costo": 39.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"39.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Esse anim nisi Lorem esse in cillum amet quis enim incididunt mollit magna dolore. Sint cillum eu aliqua quis est exercitation ex occaecat sunt sint amet dolore. Culpa incididunt labore est amet ea pariatur consequat. Aute irure ad pariatur eu officia minim ex nisi. Esse veniam ut voluptate ad ullamco ut et est. Ipsum laborum irure in nulla consectetur id voluptate deserunt nostrud labore duis elit. Excepteur cillum enim aute aliqua veniam dolore aliquip id esse velit. Duis dolore consequat incididunt qui sint aute est. Reprehenderit ullamco et ut enim tempor non elit ut nulla. Deserunt aute sunt sint dolore proident ullamco nisi id deserunt dolore nostrud sit reprehenderit."
     },
     {
       "id": 19,
@@ -263,8 +281,9 @@
       "especialidad": "Perdida de peso",
       "universidad": "Baghyatoolah Medical Sciences University",
       "experiencia": 5,
-      "costo": 19.99, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"19.99"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Mollit sunt pariatur anim duis ad magna proident consectetur magna cupidatat. Deserunt ex incididunt reprehenderit aliquip occaecat deserunt occaecat reprehenderit. Eu excepteur esse consectetur incididunt duis nisi culpa. Officia aliqua qui proident occaecat pariatur occaecat exercitation duis. Pariatur et elit excepteur est ullamco excepteur elit pariatur voluptate anim elit elit ea eiusmod. Pariatur exercitation ut reprehenderit sint. Eu incididunt officia magna reprehenderit quis irure. Voluptate elit ipsum aute aliqua qui minim voluptate eiusmod veniam. Irure dolore ipsum commodo et labore ut ut. In reprehenderit nostrud aute nulla sint ea ex pariatur ipsum. Cillum magna sit aliquip pariatur aliqua excepteur officia aliquip elit consequat sit nulla excepteur. Occaecat dolor tempor magna dolore."
     },
     {
       "id": 20,
@@ -277,8 +296,9 @@
       "especialidad": "Movilidad reducida",
       "universidad": "Dongseo University",
       "experiencia": 5,
-      "costo": 3.49, 
-      "avatar": "https://i.imgur.com/LDOO4Qs.jpg"
+      "costo": [{"onSiteCost":"3.49"}],
+      "avatar": "https://i.imgur.com/LDOO4Qs.jpg",
+      "aboutMe": "Et laborum est eiusmod occaecat. Do duis cillum adipisicing tempor ad sunt Lorem dolore ullamco. Amet voluptate labore aliqua aliquip eu aute labore. Est exercitation nulla quis adipisicing sint mollit ex reprehenderit cupidatat aliquip. Voluptate ullamco quis occaecat reprehenderit ea deserunt do fugiat reprehenderit incididunt. Aliquip sunt pariatur nisi mollit qui. Qui duis aliquip eiusmod id id cillum cillum cupidatat. Ullamco dolore ex proident esse commodo labore ut esse dolor cillum enim ad do. Duis officia culpa sint duis consequat consectetur."
     }
   ]
 }

@@ -1,0 +1,75 @@
+/* * {
+    font-size: medium;
+    color: white;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.ViewContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C6AC8F;
+    border: solid 1px #C6AC8F;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 14px;
+    font-size: medium;
+    color: white;
+}
+
+.FormContainer .MoreOptions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 14px;
+    gap: 3px;
+}
+
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+div .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    color: black;
+}
+
+.width-style-inputs{
+    width: 500px;
+}
+
+form button {
+    background-color: #22333B;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a {
+    font-size: medium;
+    color: white;
+}
