@@ -1,0 +1,22 @@
+.DetailsCardContainer {
+    background: #EAE0D5;
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 23px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DetailsCardContainer .ButtonContianer {
+    display: flex;
+    align-items: center;
+}
+
+.DetailsCardContainer .ButtonContianer button {
+    background-color: #22333B;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
