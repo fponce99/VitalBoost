@@ -1,0 +1,12 @@
+.TypeFilterContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.CheckBox {
+    margin: 20px 0px 5px 25px;
+}
+
+.CheckBox input{
+    margin-right: 10px;
+}

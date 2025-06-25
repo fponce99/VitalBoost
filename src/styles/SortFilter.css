@@ -1,0 +1,19 @@
+.SortFilterContainer {
+    border: solid 1px #7E7E7E;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.SortFilterContainer #order {
+    border-width: 0;
+    background-color: white;
+    color: #7E7E7E;
+}
+
+.SortFilterContainer #order:focus {
+    outline: none;
+}
+
+.SortFilterContainer #order:focus option {
+    padding: 50px;
+}

@@ -1,0 +1,8 @@
+.FilterContainer {
+    height: 750px;
+    grid-area: filter;
+    border: solid 1px #7E7E7E;
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-width: 200px;
+}

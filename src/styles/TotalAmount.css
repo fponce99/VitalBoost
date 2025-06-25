@@ -1,0 +1,8 @@
+.ResultPreviewContainer {
+    display: flex;
+}
+
+.ResultPreviewContainer h3.SearchWord {
+    padding: 0 5px;
+    color: #FF3948;
+}
