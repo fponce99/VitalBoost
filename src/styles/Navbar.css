@@ -1,0 +1,6 @@
+.NavbarContainer {
+    display: flex;
+    background: #C6AC8F;
+    padding: 15px;
+    justify-content: space-between;
+}

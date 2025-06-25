@@ -5,12 +5,13 @@ import { signOut } from "firebase/auth";
 import { auth } from "../../firebase";
 
 function UserIcon() {
-  const {showTooltip, setShowTooltip} = useContext(SearchContext);
+  const {showTooltip, setShowTooltip, setUser} = useContext(SearchContext);
   const buttonRef = useRef(null);
   const tooltipRef = useRef(null);
 
   const HandleLogOut = () => {
     signOut(auth);
+    setUser(null);
     alert("Sesion cerrada");
   }
 
