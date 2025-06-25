@@ -1,0 +1,68 @@
+.HeaderCoachInfo {
+  display: grid;
+  grid-template-columns: 30% 35% auto;
+}
+
+.ImageCoachContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.paddingCoachSectionInnerElements {
+  padding: 50px 30px;
+  border: solid 1px #bfb7ad;
+}
+
+.ImageCoachContainer img {
+  width: 180px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.MiniBoxStyle {
+  background-color: #EAE0D5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.MiniBoxStyle form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.MiniBoxStyle form button {
+  width: 150px;
+}
+
+.BodyCoachInfo {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+.BodySubSectionContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  padding: 30px;
+  border: solid 1px black;
+  border-radius: 20px;
+}
+
+.PaymentMethodsContainer {
+  display: grid;
+  grid-template-columns: 30% 20% auto;
+  
+}
+
+.AltInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
