@@ -1,0 +1,12 @@
+#root {
+  margin: 0 0;
+  padding: 0;
+}
+
+.content-ResultandFilter{
+  display: grid;
+  grid-template-areas: "filter results";
+  grid-template-columns: 15% auto;
+  column-gap: 70px;
+  padding: 30px 35px;
+}
