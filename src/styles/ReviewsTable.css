@@ -1,0 +1,13 @@
+.ReviewsTableContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 100px 30px 100px;
+}
+
+.CommentListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 50px;
+}
