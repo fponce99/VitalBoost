@@ -1,74 +1,96 @@
 import { useState, useEffect, createContext } from "react";
-import users from "../../../assets/users.json"
 
 const SearchContext = createContext();
 
 function SearchProvider({ children }) {
-  const [showTooltip, setShowTooltip] = useState(false)
+  const [user, setUser] = useState(null);
+  const [coach, setCoach] = useState({});
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalidad, setModalidad] = useState("presencial");
+  const [showTooltip, setShowTooltip] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-  const [products, setProducts] = useState([]);
-  const [imageProduct, setImageProduct] = useState("");
-  const [titleProduct, setTitleProduct] = useState("");
-  const [priceProduct, setPriceProduct] = useState("");
-  const [descriptionProduct, setDescriptionProduct] = useState("");
+  const [clients, setClients] = useState([]);
+  const [reserves, setReserves] = useState([]);
+  const [comments, setComments] = useState([]);
 
-  // const getData = async () => {
-  //   const response = await fetch("https://fakestoreapi.com/products");
-  //   const data = await response.json();
-  //   return data
-  // };
+  const fetchData = async (url, fallback = []) => {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Error en la petición a ${url}`);
+      const data = await response.json();
+      return Array.isArray(data) ? data : fallback;
+    } catch (error) {
+      console.error(error);
+      return fallback;
+    }
+  };
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const productList = await getData();
-  //       setProducts(productList);
-  //       setIsLoading(false);
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const productList = users.users;
-        console.log(productList)
-        setProducts(productList);
-        setIsLoading(false);
-      } catch (error) {
-        console.error("Error fetching data:", error);
+  const normalizeText = (text = "") => text.toLowerCase();
+
+  const filterBySearch = (dataList, listName) => {
+    const searchText = normalizeText(searchValue);
+
+    return dataList.filter((item) => {
+      if (listName === "clientes") {
+        const profesion = normalizeText(item.profesion || "");
+        const nombre = normalizeText(item.nombreCompleto || "");
+        return profesion.includes(searchText) || nombre.includes(searchText);
       }
-    };
-    fetchData();
-  }, []);
 
-  const searchedProducts = products.filter((user) => {
-    const productProfesion = user.profesion.toLowerCase();
-    const productName = user.name.toLowerCase();
-    const searchText = searchValue.toLowerCase();
-    return productProfesion.includes(searchText) || productName.includes(searchText);
-  });
+      if (listName === "reservas") {
+        const modalidad = normalizeText(item.modalidad || "");
+        const estado = normalizeText(item.estado || "");
+        return modalidad.includes(searchText) || estado.includes(searchText);
+      }
+
+      // Si no coincide ningún listName, no filtra nada
+      return false;
+    });
+  };
+
+  useEffect(() => {
+    const loadInitialData = async () => {
+      if (!user) return;
+      const id = user.id;
+      const rol = user.rol;
+      setIsLoading(true);
+      const [fetchedClients, fetchedReserves] = await Promise.all([
+        fetchData("http://localhost:8080/entrenadores"),
+        fetchData(`http://localhost:8082/reservas/${rol}/${id}`),
+      ]);
+
+      setClients(fetchedClients);
+      setReserves(fetchedReserves);
+      setIsLoading(false);
+    };
+
+    loadInitialData();
+  }, [user]);
+
+  const searchedCoaches = filterBySearch(clients, "clientes");
+  const searchedReserves = filterBySearch(reserves, "reservas");
 
   return (
     <SearchContext.Provider
       value={{
+        user,
+        setUser,
+        modalidad,
+        setModalidad,
         searchValue,
         setSearchValue,
-        searchedProducts,
+        searchedCoaches,
+        searchedReserves,
         isLoading,
         showTooltip,
         setShowTooltip,
-        imageProduct,
-        setImageProduct,
-        titleProduct,
-        setTitleProduct,
-        priceProduct,
-        setPriceProduct,
-        descriptionProduct,
-        setDescriptionProduct
+        coach,
+        setCoach,
+        comments,
+        setComments,
+        isOpen,
+        setIsOpen,
       }}
     >
       {children}
