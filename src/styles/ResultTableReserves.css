@@ -1,0 +1,48 @@
+.ResultTableReservesContainer {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+tr, table {
+    width: 100%;
+}
+
+table {
+    table-layout: fixed;
+}
+
+thead th {
+    background-color: #C6AC8F;
+}
+
+th, td {
+    border: solid 1px black;
+    padding: 10px;
+    text-align: center;
+}
+
+.firstColumn {
+    width: 10%;
+}
+.secondColumn {
+    width: 25%;
+}
+.thirdColumn {
+    width: 20%;
+}
+.fourthColumn {
+    width: 20%;
+}
+.fifthColumn {
+    width: 25%;
+}
+
+.estado-label.finalizado {
+  color: red;
+  font-weight: bold;
+}
+
+.estado-label.pendiente {
+  color: green;
+}
