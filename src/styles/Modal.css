@@ -1,0 +1,62 @@
+.ModalContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: grid;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+}
+
+.ContentModalContainer {
+    background-color: #C6AC8F;
+    width: 40%;
+    border: solid 1px #8B8B8B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 30px;
+    color: white;
+    gap: 20px;
+}
+
+.ContentModalContainer .ProductImageContainer {
+    display: flex;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.ContentModalContainer .ProductImageContainer .closeModal {
+    position: fixed;
+    right: 31%;
+    color: #5E503F;
+    width: 25px;
+    height: 25px
+}
+
+.ContentModalContainer .ProductImageContainer img {
+    width: 50%;
+    aspect-ratio: 4/3;
+    object-fit: contain;    
+}
+
+
+.ContentModalContainer .DetailsModalContainer {
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ContentModalContainer .DetailsModalContainer .HeaderDetailModalContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-date-time {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
