@@ -1,4 +1,5 @@
 import { useState, useEffect, createContext } from "react";
+import { API_ENDPOINTS } from '../../../config/api';
 
 const SearchContext = createContext();
 
@@ -56,8 +57,8 @@ function SearchProvider({ children }) {
       const rol = user.rol;
       setIsLoading(true);
       const [fetchedClients, fetchedReserves] = await Promise.all([
-        fetchData("http://localhost:8080/entrenadores"),
-        fetchData(`http://localhost:8082/reservas/${rol}/${id}`),
+        fetchData(`${API_ENDPOINTS.ENTRENADOR}/entrenadores`),
+        fetchData(`${API_ENDPOINTS.RESERVAS}/reservas/${rol}/${id}`),
       ]);
 
       setClients(fetchedClients);

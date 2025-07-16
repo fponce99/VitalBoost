@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { SearchContext } from "../utils/context/SearchContext";
+import { API_ENDPOINTS } from '../config/api';
 import "../styles/SignUp.css";
 
 const initialFormState = {
@@ -132,9 +133,9 @@ function Signup() {
   };
 
   const postUserToBackend = async (userData, isCoach) => {
-    const endpoint = isCoach ? "8080/entrenadores" : "8081/clientes";
+    const endpoint = isCoach ? `${API_ENDPOINTS.ENTRENADOR}/entrenadores` : `${API_ENDPOINTS.CLIENTE}/clientes`;
 
-    const response = await fetch(`http://localhost:${endpoint}`, {
+    const response = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { IoSend } from "react-icons/io5";
 import "../styles/CommentBox.css";
 import { SearchContext } from "../utils/context/SearchContext";
+import { API_ENDPOINTS } from '../config/api';
 
 function CommentBox() {
   const { user, coach } = useContext(SearchContext)
@@ -10,7 +11,7 @@ function CommentBox() {
 
   const createReview = async () => {
     try {
-      const response = await fetch("http://localhost:8083/resenias", {
+      const response = await fetch(`${API_ENDPOINTS.RESENIAS}/resenias`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

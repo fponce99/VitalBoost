@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { SearchContext } from "../utils/context/SearchContext";
 import "../styles/Modal.css";
+import { API_ENDPOINTS } from '../config/api';
 
 const AVAILABILITY_TIMES = [
   "08:00",
@@ -60,7 +61,7 @@ function Modal() {
   const makeReservation = async () => {
     const reserveBody = getReserveBody();
     try {
-      const response = await fetch("http://localhost:8082/reservas", {
+      const response = await fetch(`${API_ENDPOINTS.RESERVAS}/reservas`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

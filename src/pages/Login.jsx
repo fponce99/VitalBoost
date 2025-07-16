@@ -5,13 +5,14 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { Logo } from "../assets/Logo";
 import { auth } from "../firebase";
 import { SearchContext } from "../utils/context/SearchContext";
+import { API_ENDPOINTS } from '../config/api';
 
 import "../styles/Login.css";
 
 async function getUserById(id) {
   const endpoints = [
-    { url: `http://localhost:8080/entrenadores/${id}`, rol: "entrenador" },
-    { url: `http://localhost:8081/clientes/${id}`, rol: "cliente" },
+    { url: `${API_ENDPOINTS.ENTRENADOR}/entrenadores/${id}`, rol: "entrenador" },
+    { url: `${API_ENDPOINTS.CLIENTE}/clientes/${id}`, rol: "cliente" },
   ];
 
   for (const endpoint of endpoints) {

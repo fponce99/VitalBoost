@@ -4,6 +4,7 @@ import { onAuthStateChanged } from "firebase/auth";
 
 import { auth } from "../firebase";
 import { SearchContext } from "../utils/context/SearchContext";
+import { API_ENDPOINTS } from '../config/api';
 
 import MainView from "./MainView";
 import MainViewCoach from "./MainViewCoach";
@@ -16,8 +17,8 @@ function App() {
 
   async function getUserById(id) {
     const endpoints = [
-      { url: `http://localhost:8080/entrenadores/${id}`, rol: "entrenador" },
-      { url: `http://localhost:8081/clientes/${id}`, rol: "cliente" },
+      { url: `${API_ENDPOINTS.ENTRENADOR}/entrenadores/${id}`, rol: "entrenador" },
+      { url: `${API_ENDPOINTS.CLIENTE}/clientes/${id}`, rol: "cliente" },
     ];
 
     for (const { url, rol } of endpoints) {

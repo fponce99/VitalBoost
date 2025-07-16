@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect, useCallback } from "react";
 import { SearchContext } from "../utils/context/SearchContext";
+import { API_ENDPOINTS } from '../config/api';
 import "../styles/ResultTableReserves.css";
 
 function ResultTableReserves() {
@@ -28,7 +29,7 @@ function ResultTableReserves() {
         if (!namesMap[clienteId]) {
           try {
             const res = await fetch(
-              `http://localhost:8081/clientes/${clienteId}`
+              `${API_ENDPOINTS.CLIENTE}/clientes/${clienteId}`
             );
             if (res.ok) {
               const data = await res.json();

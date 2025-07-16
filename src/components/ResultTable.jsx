@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../utils/context/SearchContext";
 import { Card } from "./Card";
+import { API_ENDPOINTS } from '../config/api';
 import "../styles/ResultTable.css";
 
 function ResultTable() {
@@ -10,7 +11,7 @@ function ResultTable() {
 
   const getReseniasByCoach = async (id) => {
     try {
-      const res = await fetch(`http://localhost:8083/resenias/entrenador/${id}`);
+      const res = await fetch(`${API_ENDPOINTS.RESENIAS}/resenias/entrenador/${id}`);
       if (res.ok) {
         const data = await res.json();
         setComments(data)
