@@ -57,8 +57,8 @@ function SearchProvider({ children }) {
       const rol = user.rol;
       setIsLoading(true);
       const [fetchedClients, fetchedReserves] = await Promise.all([
-        fetchData(`${API_ENDPOINTS.ENTRENADOR}/entrenadores`),
-        fetchData(`${API_ENDPOINTS.RESERVAS}/reservas/${rol}/${id}`),
+        fetchData(`${API_ENDPOINTS.ENTRENADOR}`),
+        fetchData(`${API_ENDPOINTS.RESERVAS}/${rol}/${id}`),
       ]);
 
       setClients(fetchedClients);

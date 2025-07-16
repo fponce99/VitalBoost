@@ -11,8 +11,8 @@ import "../styles/Login.css";
 
 async function getUserById(id) {
   const endpoints = [
-    { url: `${API_ENDPOINTS.ENTRENADOR}/entrenadores/${id}`, rol: "entrenador" },
-    { url: `${API_ENDPOINTS.CLIENTE}/clientes/${id}`, rol: "cliente" },
+    { url: `${API_ENDPOINTS.ENTRENADOR}${id}`, rol: "entrenador" },
+    { url: `${API_ENDPOINTS.CLIENTE}${id}`, rol: "cliente" },
   ];
 
   for (const endpoint of endpoints) {

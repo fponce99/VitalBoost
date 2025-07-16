@@ -29,7 +29,7 @@ function ResultTableReserves() {
         if (!namesMap[clienteId]) {
           try {
             const res = await fetch(
-              `${API_ENDPOINTS.CLIENTE}/clientes/${clienteId}`
+              `${API_ENDPOINTS.CLIENTE}${clienteId}`
             );
             if (res.ok) {
               const data = await res.json();

@@ -61,7 +61,7 @@ function Modal() {
   const makeReservation = async () => {
     const reserveBody = getReserveBody();
     try {
-      const response = await fetch(`${API_ENDPOINTS.RESERVAS}/reservas`, {
+      const response = await fetch(`${API_ENDPOINTS.RESERVAS}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

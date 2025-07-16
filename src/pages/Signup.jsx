@@ -133,7 +133,7 @@ function Signup() {
   };
 
   const postUserToBackend = async (userData, isCoach) => {
-    const endpoint = isCoach ? `${API_ENDPOINTS.ENTRENADOR}/entrenadores` : `${API_ENDPOINTS.CLIENTE}/clientes`;
+    const endpoint = isCoach ? `${API_ENDPOINTS.ENTRENADOR}` : `${API_ENDPOINTS.CLIENTE}`;
 
     const response = await fetch(endpoint, {
       method: "POST",

@@ -11,7 +11,7 @@ function CommentBox() {
 
   const createReview = async () => {
     try {
-      const response = await fetch(`${API_ENDPOINTS.RESENIAS}/resenias`, {
+      const response = await fetch(`${API_ENDPOINTS.RESENIAS}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

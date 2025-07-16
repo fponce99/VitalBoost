@@ -11,7 +11,7 @@ function ResultTable() {
 
   const getReseniasByCoach = async (id) => {
     try {
-      const res = await fetch(`${API_ENDPOINTS.RESENIAS}/resenias/entrenador/${id}`);
+      const res = await fetch(`${API_ENDPOINTS.RESENIAS}entrenador/${id}`);
       if (res.ok) {
         const data = await res.json();
         setComments(data)
