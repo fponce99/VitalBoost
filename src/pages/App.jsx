@@ -11,9 +11,10 @@ import MainViewCoach from "./MainViewCoach";
 import Login from "./Login";
 import Signup from "./Signup";
 import CoachDetails from "./CoachDetails";
+import Toast from "../components/Toast";
 
 function App() {
-  const { user, setUser } = useContext(SearchContext);
+  const { user, setUser, toast, hideToast } = useContext(SearchContext);
 
   async function getUserById(id) {
     const endpoints = [
@@ -95,6 +96,12 @@ function App() {
           element={user ? <CoachDetails /> : <Navigate to="/login" />}
         />
       </Routes>
+      <Toast
+        message={toast.message}
+        type={toast.type}
+        isVisible={toast.isVisible}
+        onClose={hideToast}
+      />
     </BrowserRouter>
   );
 }

@@ -13,7 +13,7 @@ function Filter () {
                 options={["Hombre", "Mujer" ]}
             />
             <TypeFilter 
-                name='Especialidad'
+                name='Idioma'
                 options={["Español", "Ingeles"]}
             />
             <TypeFilter 

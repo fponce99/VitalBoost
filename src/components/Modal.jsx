@@ -22,7 +22,7 @@ function nextTime(startTime) {
 }
 
 function Modal() {
-  const { user, setIsOpen, modalidad, coach } = useContext(SearchContext);
+  const { user, setIsOpen, modalidad, coach, showToast } = useContext(SearchContext);
 
   const [form, setForm] = useState({
     email: "",
@@ -74,10 +74,11 @@ function Modal() {
       }
 
       await response.json();
-      alert("Reserva creado");
+      showToast("Reserva creada exitosamente", "success");
+      setIsOpen(false)
     } catch (error) {
       console.error("Error al crear reserva:", error);
-      throw error;
+      showToast("Error al crear la reserva. Inténtalo de nuevo.", "error");
     }
   };
 

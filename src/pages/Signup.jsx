@@ -72,7 +72,7 @@ const CoachForm = ({ formData, handleChange }) => (
 
 
 function Signup() {
-  const { setUser } = useContext(SearchContext);
+  const { setUser, showToast } = useContext(SearchContext);
   const [formData, setFormData] = useState(initialFormState);
 
   const handleChange = ({ target }) => {
@@ -88,7 +88,7 @@ function Signup() {
     const match = password === confirmPassword;
     if (!match) {
       setFormData((prev) => ({ ...prev, password: "", confirmPassword: "" }));
-      alert("Las contraseñas no coinciden");
+      showToast("Las contraseñas no coinciden", "error");
     }
     return match;
   };
@@ -125,10 +125,10 @@ function Signup() {
       }
 
       await postUserToBackend(newUser, formData.isCoach);
-      alert("Registro exitoso");
+      showToast("Registro exitoso", "success");
     } catch (error) {
       console.error("Error al registrarse:", error);
-      alert("Error al crear cuenta");
+      showToast("Error al crear cuenta", "error");
     }
   };
 

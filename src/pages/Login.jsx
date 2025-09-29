@@ -32,7 +32,7 @@ async function getUserById(id) {
 }
 
 function Login() {
-  const { setUser } = useContext(SearchContext);
+  const { setUser, showToast } = useContext(SearchContext);
   const [formData, setFormData] = useState({ email: "", password: "" });
 
   const handleChange = ({ target }) => {
@@ -51,13 +51,13 @@ function Login() {
 
       if (userData) {
         setUser(userData);
-        alert("Inicio de sesión exitoso");
+        showToast("Inicio de sesión exitoso", "success");
       } else {
-        alert("No se encontró la información del usuario");
+        showToast("No se encontró la información del usuario", "error");
       }
     } catch (error) {
       console.error("Error en el login:", error);
-      alert("Credenciales incorrectas o error de red");
+      showToast("Credenciales incorrectas o error de red", "error");
     }
   };
 

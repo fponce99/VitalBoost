@@ -14,6 +14,7 @@ function SearchProvider({ children }) {
   const [clients, setClients] = useState([]);
   const [reserves, setReserves] = useState([]);
   const [comments, setComments] = useState([]);
+  const [toast, setToast] = useState({ isVisible: false, message: "", type: "success" });
 
   const fetchData = async (url, fallback = []) => {
     try {
@@ -39,6 +40,14 @@ function SearchProvider({ children }) {
     } catch (error) {
       console.error(`Error actualizando comentarios para entrenador ${coachId}:`, error);
     }
+  };
+
+  const showToast = (message, type = "success") => {
+    setToast({ isVisible: true, message, type });
+  };
+
+  const hideToast = () => {
+    setToast({ isVisible: false, message: "", type: "success" });
   };
 
   const filterBySearch = (dataList, listName) => {
@@ -103,6 +112,9 @@ function SearchProvider({ children }) {
         comments,
         setComments,
         refreshComments,
+        toast,
+        showToast,
+        hideToast,
         isOpen,
         setIsOpen,
       }}
