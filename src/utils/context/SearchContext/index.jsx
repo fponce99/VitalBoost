@@ -29,6 +29,18 @@ function SearchProvider({ children }) {
 
   const normalizeText = (text = "") => text.toLowerCase();
 
+  const refreshComments = async (coachId) => {
+    try {
+      const response = await fetch(`${API_ENDPOINTS.RESENIAS}entrenador/${coachId}`);
+      if (response.ok) {
+        const data = await response.json();
+        setComments(data);
+      }
+    } catch (error) {
+      console.error(`Error actualizando comentarios para entrenador ${coachId}:`, error);
+    }
+  };
+
   const filterBySearch = (dataList, listName) => {
     const searchText = normalizeText(searchValue);
 
@@ -58,7 +70,7 @@ function SearchProvider({ children }) {
       setIsLoading(true);
       const [fetchedClients, fetchedReserves] = await Promise.all([
         fetchData(`${API_ENDPOINTS.ENTRENADOR}`),
-        fetchData(`${API_ENDPOINTS.RESERVAS}/${rol}/${id}`),
+        fetchData(`${API_ENDPOINTS.RESERVAS}${rol}/${id}`),
       ]);
 
       setClients(fetchedClients);
@@ -90,6 +102,7 @@ function SearchProvider({ children }) {
         setCoach,
         comments,
         setComments,
+        refreshComments,
         isOpen,
         setIsOpen,
       }}

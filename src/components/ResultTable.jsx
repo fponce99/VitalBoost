@@ -36,7 +36,7 @@ function ResultTable() {
         ) : (
           searchedCoaches.map((coach) => (
             <Card
-              key={coach.id} // Requiere que cada coach tenga un ID único
+              key={coach.id}
               coach={coach}
               onClick={() => handleInfoCoach(coach)}
             />

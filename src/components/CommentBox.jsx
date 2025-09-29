@@ -5,7 +5,7 @@ import { SearchContext } from "../utils/context/SearchContext";
 import { API_ENDPOINTS } from '../config/api';
 
 function CommentBox() {
-  const { user, coach } = useContext(SearchContext)
+  const { user, coach, refreshComments } = useContext(SearchContext)
   const [comment, setComment] = useState("");
   const [rate, setRate] = useState(0);
 
@@ -30,6 +30,9 @@ function CommentBox() {
 
       await response.json();
       alert("Reseña creada");
+      await refreshComments(coach.id);
+      setComment("");
+      setRate(0);
     } catch (error) {
       console.error("Error al crear reserva:", error);
       throw error;
